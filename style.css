@@ -32,12 +32,14 @@ body{
     display: grid;
     grid-template-rows: max-content 1fr max-content;
     height: 100vh;
-
 }
 
-main{
-    max-width: 700rem;
+.container{
+    min-width: 3.82rem;
+}
 
+#content{
+    background-color: var(--color-back-bod-mob);
 }
 
 
@@ -86,10 +88,6 @@ header form{
 
 }
 
-main{
-    background-color: var(--color-back-body);
-}
-
 #imgpost{
     width: 100%;
 }
@@ -126,18 +124,44 @@ main{
     flex-direction: column;
     gap: 3.2rem;
     margin-bottom: 3.2rem;
-    padding: 0 3.2rem;
+    /*padding: 0 3.2rem;*/
+    
 }
 
 .item{
     display: flex;
-    justify-content: center;
+    /*justify-content: center;*/
     gap: 1.6rem;
+    
+    height: 10rem;
+}
+
+.details{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.details p{
+    font-size: 1.2rem;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+.details h3{
+    font-size: 1.6rem;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
 }
 
 .item img{
 
-    width: 100%;
+    
     object-fit: cover;
 
 }
@@ -150,7 +174,7 @@ footer{
 
 }
 
-@media (min-width: 700px){
+@media (min-width: 1024px){
 
     header{
         padding: 1.6rem 10rem;
@@ -158,40 +182,61 @@ footer{
 
 
 
-    main{
+    #content{
         display: grid;
         grid-template-columns: 2fr 1fr;
         background-color: var(--color-back-bod-desk);
-
-        gap: 3.2rem;
-        max-width: 1500rem;
-        justify-content: center;
-        padding: 4.4rem 10rem;
         
+        max-width: 1500rem;
     }
 
-    #imgpost{
+   /* #imgpost{
         width: 100%;
-        padding-left: 0 10rem;
-    }
+    }*/
 
     .post{
-        padding-left: 0 10rem;
-        margin: 0;
+        padding: 0;
+    }
 
-        font-weight: 400;
-        height: 100vh
+    main{
+        padding: 3.2rem;
     }
 
 
     .gallery{
-        margin-bottom: 0;
-        padding-right: 0 10rem;        
+        margin:0;
+        padding-top: 3.2rem; 
+              
     }
 
     .item{
         font-size: 1.4rem;
+        width: 15.1rem;
+        height: 8.4rem;
+        padding: 0;
+
     }
+
+    .item figcaption{
+        
+        width: 15.1rem;
+        height: 8.4rem;
+        text-align: center;
+    }
+
+    .item figcaption p{
+       
+        font-size: 1rem;
+        width: 15.1rem;
+        text-align: center;
+    }
+
+    .item h3{
+        font-size: 1.4rem;
+    }
+
+
+  
     
 
     
