@@ -114,6 +114,10 @@ header form{
     object-fit: cover;
 }
 
+aside{
+    margin-left: 3.2rem;
+}
+
 .post{
     margin: 3.2rem 0;
 
